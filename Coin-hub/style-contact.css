@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+:root {
+    --main-white-color: #fff;
+    --main-grey-color: #f2f2f2;
+    --main-black-color: black;
+    --main-green-color: #4df1e4;
+}
+
+*{box-sizing:border-box;}
+
+form{
+	width:100%;
+	padding:16px;
+	border-radius:7px;
+	margin:auto;
+  background-color:#ccc;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:25%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:var(--main-black-color);
+  background-color: var(--main-green-color);
+  margin-left: 35%;
+  font-weight: bold;
+} 
+
+form input[type="submit"]:hover{
+  cursor:pointer;
+  border: 2px black solid;
+}
+
+textarea{
+	width:100%;
+	height:120px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+/*---portada*/
+.page-nosotros {
+  padding-bottom: 100px;  
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 250px;
+  background: 
+    url("photos/nosotros.jpg") no-repeat
+    center / cover;
+  background-blend-mode: luminosity;
+  color: var(--main-white-color);
+}
+
+.page-support {
+    padding-bottom: 100px;  
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    min-height: 250px;
+    background: 
+      url("photos/support1.jpg") no-repeat
+      center / cover;
+    background-blend-mode: luminosity;
+    color: var(--main-white-color);
+  }
+  
+  .page-support div {
+    max-width: 500px;
+  }
+  
+  .page-support h1 {
+    margin-bottom: 20px;
+  }
+  
+  .page-jumbo p + p {
+    margin-top: 10px;
+  }
+  #help{
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  #formulario{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: var(--main-grey-color);
+  }
+  #submit-form{
+    background-color: var(--main-green-color);
+  }
